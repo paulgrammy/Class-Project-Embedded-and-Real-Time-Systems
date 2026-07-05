@@ -1,0 +1,77 @@
+#.gitignore
+
+# baseline: everything
+*
+*.log
+.Xil
+
+# not this file itself
+!.gitignore
+
+# not these standard files
+!LICENSE
+!README.md
+
+# not report dir
+!report*/
+!report*/*
+!report*/**
+
+# not tcl scripts, text and report files
+!*.tcl
+!*.txt
+!*.labrpt
+
+# not hardware exports
+!project*/
+!project*/*.xsa
+!*.xsa
+
+# not what's in constraints, csrc, hdlsrc, testbench, ip...
+!constraints/
+!constraints/*
+!constraints/**
+!csrc*/
+!csrc*/*
+!csrc*/**
+!scripts/
+!scripts/*
+!scripts/**
+scripts/.Xil/
+scripts/*.log
+!hdl/
+!hdl/*
+!hdl/**
+!ip/
+!ip/*
+!ip/**
+!hw/
+!hw/*
+!hw/**
+!ip_repo/
+!ip_repo/*
+!ip_repo/**
+!UARTscreen_PC/
+!UARTscreen_PC/*
+!UARTscreen_PC/**
+UARTscreen_PC/*.elf
+!ip_repo/**
+
+# not Vitis GUI settings "Don't ask about experimental GUI", "ditch welcome screen"
+!vitis_project_demo
+!vitis_project_demo/.keep
+!vitis_project_demo/.metadata
+!vitis_project_demo/.metadata/.plugins
+!vitis_project_demo/.metadata/.plugins/org.eclipse.core.runtime
+!vitis_project_demo/.metadata/.plugins/org.eclipse.core.runtime/.settings
+!vitis_project_demo/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.xilinx.sdx.core.prefs
+!vitis_project_demo/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
+
+!vitis_project_ees
+!vitis_project_ees/.keep
+!vitis_project_ees/.metadata
+!vitis_project_ees/.metadata/.plugins
+!vitis_project_ees/.metadata/.plugins/org.eclipse.core.runtime
+!vitis_project_ees/.metadata/.plugins/org.eclipse.core.runtime/.settings
+!vitis_project_ees/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.xilinx.sdx.core.prefs
+!vitis_project_ees/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
